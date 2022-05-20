@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{319E61A4-C922-4E05-AEBA-BF78862A8C66}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TowaHobbyShop.My.MyApplication</StartupObject>
+    <RootNamespace>TowaHobbyShop</RootNamespace>
+    <AssemblyName>TowaHobbyShop</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TowaHobbyShop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TowaHobbyShop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.4.5\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FBarang.Designer.vb">
+      <DependentUpon>FBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDistributor.Designer.vb">
+      <DependentUpon>FDistributor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FDistributor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FJenisbarang.Designer.vb">
+      <DependentUpon>FJenisbarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FJenisbarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.Designer.vb">
+      <DependentUpon>FLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMenu.Designer.vb">
+      <DependentUpon>FMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPemasok.Designer.vb">
+      <DependentUpon>FPemasok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FPemasok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPengguna.Designer.vb">
+      <DependentUpon>FPengguna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FPengguna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPenjualan.Designer.vb">
+      <DependentUpon>FPenjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FPenjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FBarang.resx">
+      <DependentUpon>FBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDistributor.resx">
+      <DependentUpon>FDistributor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FJenisbarang.resx">
+      <DependentUpon>FJenisbarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMenu.resx">
+      <DependentUpon>FMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPemasok.resx">
+      <DependentUpon>FPemasok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPengguna.resx">
+      <DependentUpon>FPengguna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPenjualan.resx">
+      <DependentUpon>FPenjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
